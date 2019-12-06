@@ -300,28 +300,6 @@ class Car
 end
 ```
 
-But, Ruby loves to be short and sweet so we can skip the `self` keyword altogether and just use the name of the method and Ruby will assume we are trying to call a method on the object itself.
-
-In Ruby, we can use the `self` keyword.
-
-```rb
-class Car
-  attr_accessor :fuel
-  attr_accessor :color
-  attr_reader :model
-
-  def initialize(model, color)
-    @model = model
-    @color = color
-    @fuel = 100
-  end
-  
-  def drive
-    # fuel is reference the getter and setter methods for fuel
-    fuel = fuel - 1
-  end
-end
-```
 
 ### Lab: Ruby `self`
 
